@@ -1,0 +1,95 @@
+body {
+   margin: 0;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.introduction-wrapper {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 30%;
+}
+
+.photo {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    background-color: #f19c79;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.name {
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    width: fit-content;
+}
+
+.click-around {
+    padding: 4px 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.introduction {
+    padding: 8px 24px 8px 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    background-image: linear-gradient(
+            to right,
+            #54b3d6,
+            #b8339d 50%,
+            #b8339d 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width:100%;
+}
+
